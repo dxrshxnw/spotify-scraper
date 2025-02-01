@@ -41,7 +41,7 @@ pip install -r requirements.txt
     PLAYLIST_ID = ""
     ```
 
-## Usage
+## Usage 
 
 Run the script with:
 ```sh
@@ -53,7 +53,6 @@ The script:
 1. Fetches all songs from the given Spotify playlist.
 2. Searches each song on YouTube.
 3. Downloads the best-quality MP3 using `yt-dlp`.
-
 
 
 ## Troubleshooting
