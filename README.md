@@ -38,8 +38,8 @@ pip install -r requirements.txt
     SPOTIFY_CLIENT_ID = ""
     SPOTIFY_CLIENT_SECRET = ""
     SPOTIFY_REDIRECT_URI = "http://localhost:8888/callback"
-     = ""
-    ```PLAYLIST_ID
+    PLAYLIST_ID = ""
+    ```
 
 ## Usage
 
