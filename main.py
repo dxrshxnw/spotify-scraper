@@ -1,8 +1,12 @@
 import time
 import dotenv 
-dotenv.load_dotenv()
 import os
 import yt_dlp
+import spotipy
+from spotipy.oauth2 import SpotifyOAuth
+
+
+
 
 def search_youtube(query, max_results=1):
     search_query = f"ytsearch{max_results}:{query}"
@@ -19,8 +23,8 @@ def search_youtube(query, max_results=1):
     return results
 
 
-import spotipy
-from spotipy.oauth2 import SpotifyOAuth, SpotifyClientCredentials # type: ignore
+
+dotenv.load_dotenv()
 scope = "ugc-image-upload user-read-playback-state user-modify-playback-state user-read-currently-playing app-remote-control streaming playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-follow-modify user-follow-read user-read-playback-position user-top-read user-read-recently-played user-library-modify user-library-read user-read-email user-read-private"
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope, client_id=os.getenv('SPOTIFY_CLIENT_ID'), client_secret=os.getenv('SPOTIFY_CLIENT_SECRET'), redirect_uri=os.getenv('SPOTIFY_REDIRECT_URI')))
