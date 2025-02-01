@@ -8,7 +8,7 @@ Before running the script, ensure you have the following installed:
 
 - [Python](https://www.python.org/downloads/)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-- [FFmpeg] (https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z)
+- [FFmpeg](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z)
 - [Spotipy](https://spotipy.readthedocs.io/en/2.16.1/) (to interact with Spotify API)
 
 To install dependencies, run:
